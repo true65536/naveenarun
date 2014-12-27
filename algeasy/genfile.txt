@@ -1,0 +1,45 @@
+File: index.html
+Title: Homepage
+>What is this page?
+This website presents a series of articles that intend to teach the ideas behind computer algorithms. My hope is that readers could build off the information presented here to create their own algorithms and implement them in their language of choice. Articles are targeted to the beginner or intermediate student, with a focus on intuition and understanding. Have fun!
+STOP
+
+File: contact.html
+Title: Contact
+>Contact Information
+Email: narunach@caltech.edu
+STOP
+
+
+File: about.html
+Title: About
+>About Us
+Naveen Arun: Site CreatorNaveen Arun is a student who is interested in computers and computer algorithms.Email: narunach@caltech.edu 
+STOP
+
+File: resources.html
+Title: Resources
+>Resources
+I plan to put resources here.
+>Resource 1
+It's a resource. Wowwww!
+>Resource 2
+It's another resource. Wowww~~
+>lol
+Just testing Python script.
+STOP
+
+
+File: general.html
+Title: General
+>Background: What is an algorithm?	At its most basic level, an algorithm is a roadmap for solving a problem. People create algorithms by thinking about ways to approach a problem, such as sorting objects in a row. Then, to allow computers to execute these algorithms, people create programs in various languages, such as Python, C++, and Java. Programs derived from algorithms are the backbone of nearly every computer process, from simple addition to communication via the Internet.>What makes an algorithm useful?	      A useful algorithm solves a general, well-defined problem. For example, let us consider the problem of sorting a list of objects, with the assumption that there is some way of ordering them. There are many instances of this problem ╨ for instance, consider the differences in sorting the lists {Albert, Calvin, Bob} versus sorting the list {4, 3, 1, 2}. However, the basic idea, sorting a list of objects by some method of ordering, remains constant.            As it turns out, there are many algorithms that solve this problem. One algorithm, which is the one humans use in their everyday lives, is scanning the list, finding the lowest value, and bringing it to the front. Thus, our sorting looks like this:<ul>
+Step 0: {4, 3, 1, 2}Step 1: {1, 4, 3, 2}Step 2: {1, 2, 4, 3}Step 3: {1, 2, 3, 4}
+</ul>	      A more efficient algorithm is Merge Sort. We first group the list in sets of twos, then order those sets of twos as sets of fours, and so on. Our sorting looks like this:<ul>
+Step 0: {4, 3 | 1, 2}Step 1: {3, 4 | 1, 2}Step 2: {1, 2, 3, 4}
+</ul>  Although there are some hidden calculations involved in both examples, one should note that the latter algorithm is good for efficiently sorting large lists, whereas the former can be very inefficient as list sizes grow. The efficiency of Merge Sort comes from the fact that it breaks a large problem into bite-sized pieces which are then combined into a final product.Essentially, there are three things that make an algorithm useful:<ol>It solves a general, well-defined problemIt can be applied to different instances of a problem and still yield a valid solutionIt can efficiently solve the problem, regardless of scale</ol>>Algorithms vs. ProgramsAn algorithm is an idea, whereas a program is a series of commands written out for a computer to execute. Algorithms are what a correctly written program should perform. Consider a simple algorithm for microwaving instant noodles:<ul>
+Add boiling waterPlace in microwaveRemove from microwave
+</ul>Now consider a computer-style “program” to execute this algorithm:<ul>
+Obtain (brand name) instant noodlesObtain waterBoil waterOpen lid of instant noodlesAdd 3/4 cup boiled water to instant noodlesOpen microwaveClose microwaveSet to 60 secondsWait 60 secondsOpen microwaveRemove instant noodles
+</ul>
+Notice how this example illustrates a few properties of programs and algorithms:<ol>An algorithm is an idea that is implemented by a programA program is, by nature, more specific than an algorithmA program is written for a computer, whereas an algorithm is written for humans to understand
+</ol>By learning and understanding algorithms, humans can create approaches to complex problems in the real world. Then, these approaches can be written in a computer-friendly format in the form of a program, so that computers can carry out the ideas that humans produce.>How are algorithms implemented?As mentioned above, programs implement algorithms by converting a problem into machine-executable code. Some popular means of programming and scripting include C++, Python, Java, and Matlab. These languages allow you to type commands according to specific rules, which are then “compiled” into ones and zeroes for computers to understand.When you write your own algorithms, you may come across an instance where you need to use another algorithm to solve a problem. For example, if you want to sort a two-dimensional array of objects both horizontally and vertically, it may help to break the problem into one-dimensional lists in those directions and sort the lists instead. Since many algorithms are built on other algorithms, programming languages often let you import or use popular algorithms in your own programs. For instance, in Python, importing the “numpy” package allows operations such as fast list sorting, so that you can save time in writing your own code.STOP
