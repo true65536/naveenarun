@@ -116,7 +116,7 @@ function finishPath() {
 	goodMarkers.push(goodMarkers[0]);
 	drawLines();
 	getCenter();
-	goodMarkers.map(function(x){x.setOptions({draggable:false});x.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');});
+	goodMarkers.map(function(x){google.maps.event.clearListeners(x,'click');x.setOptions({draggable:false});x.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');});
 }
 
 function makeInfoBox(myLatLng) {
