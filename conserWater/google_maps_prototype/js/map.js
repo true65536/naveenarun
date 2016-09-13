@@ -4,7 +4,7 @@ var myInfoBoxes;
 var goodMarkers;
 var badMarkers;
 var myPaths;
-var centerMarker;
+var centerMarker = null;
 
 function closeAllInfoBoxes() {
 	myInfoBoxes.map(function(x){x.close();});
@@ -19,8 +19,10 @@ function reset() {
 	myPaths.map(function(x){x.setMap(null);});
 	closeAllBadMarkers();
 	goodMarkers.map(function(x){x.setVisible(false);});
-	centerMarker.setVisible(false);
 	google.maps.event.clearListeners(map,'click');
+	if (centerMarker != null) {
+		centerMarker.setVisible(false);
+	}
 	map.addListener('click',function(event) {
                 makeInfoBox(event.latLng);
         });
@@ -108,7 +110,7 @@ function popupRemoveBox(m) {
 }
 
 function finishPath() {
-	//TODO: change colors upon submission
+	if (goodMarkers.length < 3) { return; }
 	google.maps.event.clearListeners(map,'click');
 	closeAllInfoBoxes();
 	goodMarkers.push(goodMarkers[0]);
