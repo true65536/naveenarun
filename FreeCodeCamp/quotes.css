@@ -1,0 +1,40 @@
+h1 {
+  color: white;
+  font-size: 60px;
+  padding-top: 30px;
+}
+
+#quote {
+  font-size: 30px;
+}
+
+#textarea {
+  width: 50%;
+  margin-top: 50px;
+}
+
+#quote-author {
+  text-align: right;
+  font-size: 20px;
+  font-style: italic;
+  padding: 15px 0px 15px 0px;
+}
+
+#quote-button {
+  color: white;
+}
+
+#twitter-button {
+  color: white;
+}
+
+body {
+
+}
+
+#bottom-text{
+  color: white;
+  padding-bottom: 20px;
+}
+
+
