@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Map Input Test</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
+  <body>
+    <input id="pac-input" class="controls" type="text"
+            placeholder="find place nearby">
+    <button id="pac-button-reset" class="mapButton" onclick="reset()">Reset</button>
+    <button id="pac-button-undo" class="mapButton" onclick="undo()">Undo</button>
+    <div id="map"></div>
+    <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH9c_4Z8ZNvsRMVYIlpML4HacNllbYsV0&callback=initMap&libraries=places"
+    async defer></script>
+    <p id="myText">Lol</p>
+    <p id="myLocations">Lol</p>
+  </body>
+</html>

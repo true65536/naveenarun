@@ -1,0 +1,2 @@
+use connect-roles (https://github.com/ForbesLindesay/connect-roles)
+and passport for authentication
