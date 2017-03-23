@@ -5,7 +5,7 @@ editor.setTheme("ace/theme/monokai");
 editor.getSession().setMode("ace/mode/javascript");
 execute = function(e) { editorText="";eval(editor.getValue()); 
 	if (testCondition(editorText)){
-		$("#nextLevel").html("<a href='" + 'level' + (level+1) + ".html'>Next Level</a>");
+		$("#nextLevel").html("It works! <a href='" + 'level' + (level+1) + ".html'>Next Level</a>");
 	}
 }
 $("#run").click(execute)

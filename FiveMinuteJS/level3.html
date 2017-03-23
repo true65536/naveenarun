@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<script src="jquery-3.2.0.min.js" type="text/javascript"></script>
+<script src="ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="lessons.css">
+
+<html lang="en">
+<head>
+<title>Lesson 3: Let's do math!</title>
+</head>
+<body>
+
+<div id="header">
+<p>Do math with Javascript!
+</div>
+<div id="blurb">
+<p>Javascript can do math. That is one reason why it's so useful.
+<p>It can do addition, subtraction, multiplication, and division.
+</div>
+<div id="task">
+<p>Task: Replace "/*YOUR CODE HERE*/" with "3+2*4", or any other expression that evaluates to 11.
+</div>
+<div id="nextLevel">
+</div>
+
+
+<div class="toolbar">
+	<button id="run">run</button>
+</div>
+
+<div class="editor" id="editor1">console.log(3+4);
+console.log(3-4);
+console.log(3*4);
+console.log(3/4);
+console.log(/*YOUR CODE HERE*/);</div>
+<div id="fakeConsole" class="editor">This is the console.
+Here, you can see whatever output is given to console.log(), provided the
+program runs correctly.</div>
+
+</body>
+
+<script type="text/javascript">
+var level = 3;
+var testCondition = function(s) {return s.slice(-2)=="11";};
+</script>
+<script src="consoleSetup.js" type="text/javascript"></script>
+
+
+</html>
+
+
+
+
